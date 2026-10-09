@@ -25,5 +25,6 @@ section.active { display: block; }
   <section id="contents" class="active"><h2>Site Contents</h2><p>Classroom site, learning resources.</p></section>
   <section id="contact"><h2>Contact Us</h2>
   </main>
+<script>function show(id){document.querySelectorAll("section").forEach(s=>s.classList.remove("active"));document.getElementById(id).classList.add("active");}</script>
 </body>
 </html>
