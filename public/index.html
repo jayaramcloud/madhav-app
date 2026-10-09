@@ -1,27 +1,29 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>madhav's site</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dasaradh's site</title>
+<style>
+body { font-family: sans-serif; margin: 0; display: flex; min-height: 100vh; }
+nav { width: 220px; background: #222; color: #fff; padding: 1rem; }
+nav a { color: #fff; display: block; padding: .5rem 0; text-decoration: none; }
+main { flex: 1; padding: 2rem; }
+section { display: none; }
+section.active { display: block; }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Hello from Dasaradh!</h1>
-    <p>This is my first website. It lives on GitHub and is published automatically.</p>
-  </header>
-
-  <main>
-    <h2>Try it</h2>
-    <button id="greet">Click me</button>
-    <p id="message"></p>
+<nav>
+  <h2>Menu</h2>
+  <a href="#" onclick="show('contents')">Site Contents</a>
+  <a href="#" onclick="show('about')">About Us</a>
+  <a href="#" onclick="show('contact')">Contact Us</a>
+</nav>
+<main>
+  <header><h1>Hello from Dasaradh!</h1></header>
+  <section id="contents" class="active"><h2>Site Contents</h2><p>Classroom site, learning resources.</p></section>
+  <section id="contact"><h2>Contact Us</h2>
   </main>
-
-  <footer>
-    <p>Edit <code>public/index.html</code>, <code>public/style.css</code> and <code>public/script.js</code>, then push to GitHub.</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
