@@ -23,8 +23,15 @@ section.active { display: block; }
 <main>
   <header><h1>Hello from Dasaradh!</h1></header>
   <section id="contents" class="active"><h2>Site Contents</h2><p>Classroom site, learning resources.</p></section>
+  <section id="about"><h2>About Us</h2><p>This site helps people preparing for jobs with resources and guidance.</p></section>
   <section id="contact"><h2>Contact Us</h2>
-  </main>
+  <form action="https://formspree.io/f/dasaradhmandava@gmail.com" method="POST">
+    <label>Name: <input name="name" required></label><br>
+    <label>Email: <input name="email" type="email" required></label><br>
+    <button type="submit">Send</button>
+  </form>
+  </section>
+</main>
 <script>function show(id){document.querySelectorAll("section").forEach(s=>s.classList.remove("active"));document.getElementById(id).classList.add("active");}</script>
 </body>
 </html>
