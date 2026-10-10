@@ -9,3 +9,7 @@ class TestContent(unittest.TestCase):
     def test_dropdown_structure(self):
         html = open("public/index.html").read()
         self.assertIn("sub", html)
+
+    def test_address(self):
+        html = open("public/index.html").read()
+        self.assertIn("1223, Edmonton", html)
