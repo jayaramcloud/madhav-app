@@ -5,3 +5,7 @@ class TestContent(unittest.TestCase):
         html = open("public/index.html").read()
         self.assertIn("Site Contents", html)
         self.assertIn("Contact Us", html)
+
+    def test_dropdown_structure(self):
+        html = open("public/index.html").read()
+        self.assertIn("sub", html)

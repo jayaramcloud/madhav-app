@@ -8,3 +8,7 @@ def test_menu(page: Page):
 def test_hover_menu(page):
     page.goto("https://madhav.preparingforinterviews.com")
     assert True
+
+
+def test_dropdown(page):
+    pass
